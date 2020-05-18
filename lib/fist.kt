@@ -10,3 +10,4 @@ class fist {
         println(num + mun)
     }
 }
+//Delete this file, and run the app.
