@@ -1,33 +1,15 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
+import 'package:splashscreen/splashscreen.dart';
+import './HomeScreen.dart';
 
-class SplashScreen extends StatefulWidget {
-  @override
-  _SplashScreenState createState() => _SplashScreenState();
-}
-
-
-class _SplashScreenState extends State<SplashScreen> {
-
-  
-
-  @override
-  void initState(){
-  super.initState();
-  Timer(Duration(seconds: 3), (){
-    Navigator.of(context).pushReplacementNamed('Home');
-  });
-}
+class Splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: double.infinity,
-      width: double.infinity,
-      child: FittedBox(
-        fit: BoxFit.fill,
-        child: Image.asset('assets/images/splashscreen.png'),
-      ),
+    return SplashScreen(
+      seconds: 5,
+      image: Image.asset('assets/splashcon.jpg'),
+      photoSize: 200.0,
+      navigateAfterSeconds: HomeScreen(),
     );
   }
 }
