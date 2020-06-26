@@ -1,6 +1,5 @@
 # nigeria
-
-Dawah Front of Nigeria Mobile App
+This is a flutter app that streams audio online, by parsing rss feeds
 
 ## Getting Started
 
